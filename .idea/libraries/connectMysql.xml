@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="connectMysql">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../Bibliotecas/jdbc-connectors/connectMysql/connectMysql.iml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
