@@ -64,7 +64,7 @@ public class MainViewController implements Initializable {
 
             // Terceiro devolvemos o menu porque queremos ele + o novo dado
             mainVBox.getChildren().add(mainMenu);
-            mainVBox.getChildren().add(newVBox);
+            mainVBox.getChildren().addAll(newVBox.getChildren());
 
         } catch (IOException e) {
             Alerts.showAlert("IO Exception", null, e.getMessage(), Alert.AlertType.ERROR);
