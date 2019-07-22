@@ -1,0 +1,12 @@
+.btn {
+    -fx-color: white;
+    -fx-font-size: 13px;
+    -fx-transition: all 0.4s;
+    -fx-text-transform: uppercase;
+    -fx-background-color: #5cdb95;
+}
+
+.btn:hover {
+    -fx-background-color: white;
+    -fx-color: #5cdb95;
+}
