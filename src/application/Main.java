@@ -1,4 +1,4 @@
-package sample;
+package application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -29,3 +29,5 @@ public class Main extends Application {
         launch(args);
     }
 }
+
+
