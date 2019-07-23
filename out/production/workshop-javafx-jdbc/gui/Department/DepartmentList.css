@@ -10,3 +10,16 @@
     -fx-background-color: white;
     -fx-color: #5cdb95;
 }
+
+.btn2 {
+    -fx-color: white;
+    -fx-font-size: 13px;
+    -fx-transition: all 0.4s;
+    -fx-text-transform: uppercase;
+    -fx-background-color: #E63422;
+}
+
+.btn2:hover {
+    -fx-background-color: white;
+    -fx-color: #5cdb95;
+}

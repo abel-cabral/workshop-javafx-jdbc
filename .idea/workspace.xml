@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/connectMysql.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/Department/DepartmentForm.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/util/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/workshop-javafx-jdbc/META-INF/workshop-javafx-jdbc.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/entities/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/services/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/services/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workshop-javafx-jdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/workshop-javafx-jdbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/workshop-javafx-jdbc/gui/Department/DepartmentList.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/workshop-javafx-jdbc/gui/Department/DepartmentList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Department/DepartmentList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Department/DepartmentList.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,19 +66,73 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/services/DepartmentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/util/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/About.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentForm.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentListController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#initializeNodes#0;class#DepartmentListController#0" />
+                <element signature="method#updateTableView#0;class#DepartmentListController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentList.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="105" selection-start-line="11" selection-start-column="105" selection-end-line="11" selection-end-column="105" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -89,9 +141,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="FxmlFile" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -132,16 +184,20 @@
         <option value="$PROJECT_DIR$/src/model/dao/DepartmentDao.java" />
         <option value="$PROJECT_DIR$/src/model/dao/SellerDao.java" />
         <option value="$PROJECT_DIR$/src/db/DB.java" />
-        <option value="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" />
         <option value="$PROJECT_DIR$/src/model/dao/DaoFactory.java" />
         <option value="$PROJECT_DIR$/src/model/services/DepartmentService.java" />
+        <option value="$PROJECT_DIR$/src/gui/util/Utils.java" />
+        <option value="$PROJECT_DIR$/src/gui/Department/DepartmentList.css" />
+        <option value="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" />
+        <option value="$PROJECT_DIR$/src/gui/Department/DepartmentList.fxml" />
+        <option value="$PROJECT_DIR$/src/gui/Department/DepartmentForm.fxml" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1295" />
-    <option name="y" value="23" />
+    <option name="x" value="1252" />
+    <option name="y" value="27" />
     <option name="width" value="1265" />
     <option name="height" value="968" />
   </component>
@@ -156,6 +212,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Default'; set:Default; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="gui" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,6 +255,26 @@
               <item name="workshop-javafx-jdbc" type="b2602c69:ProjectViewProjectNode" />
               <item name="workshop-javafx-jdbc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workshop-javafx-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workshop-javafx-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workshop-javafx-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workshop-javafx-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="Department" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workshop-javafx-jdbc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workshop-javafx-jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="workshop-javafx-jdbc" type="b2602c69:ProjectViewProjectNode" />
@@ -206,38 +314,6 @@
             <path>
               <item name="workshop-javafx-jdbc" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Default'; set:Default; class com.intellij.packageDependencies.ChangeListScope">
-          <expand>
-            <path>
-              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="gui" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="workshop-javafx-jdbc" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="~/Projetos/Java/workshop-javafx-jdbc" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -446,18 +522,22 @@
       <workItem from="1563755649529" duration="955000" />
       <workItem from="1563756610206" duration="8606000" />
       <workItem from="1563770644369" duration="4807000" />
-      <workItem from="1563782223976" duration="1138000" />
+      <workItem from="1563782223976" duration="2269000" />
+      <workItem from="1563829930150" duration="97000" />
+      <workItem from="1563845174720" duration="301000" />
+      <workItem from="1563867080412" duration="2191000" />
+      <workItem from="1563869646687" duration="208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21838000" />
+    <option name="totallyTimeSpent" value="25766000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1295" y="23" width="1265" height="968" extended-state="0" />
+    <frame x="1252" y="27" width="1265" height="968" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20768602" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2207686" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -551,14 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/About.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Bibliotecas/JavaFX/javafx-sdk-12.0.1/lib/javafx.controls.jar!/javafx/scene/control/SkinBase.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -593,25 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Bibliotecas/JavaFX/javafx-sdk-12.0.1/lib/javafx.fxml.jar!/javafx/fxml/Initializable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentList.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -626,25 +683,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/services/Department.java" />
-    <entry file="file://$PROJECT_DIR$/src/gui/MainViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/MainView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/entities/Seller.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -749,16 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentListController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="72" column="47" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/entities/Department.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -799,17 +834,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/services/DepartmentService.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentList.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/services/DepartmentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/About.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initializeNodes#0;class#DepartmentListController#0" />
+            <element signature="method#updateTableView#0;class#DepartmentListController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentList.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="105" selection-start-line="11" selection-start-column="105" selection-end-line="11" selection-end-column="105" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentForm.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
