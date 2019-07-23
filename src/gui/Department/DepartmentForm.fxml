@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Department.DepartmentFormController">
    <children>
       <GridPane layoutX="67.0" layoutY="41.0" prefHeight="189.0" prefWidth="555.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
         <columnConstraints>
@@ -26,17 +26,17 @@
          <children>
             <Label text="ID" />
             <Label prefHeight="17.0" prefWidth="84.0" text="Label" GridPane.rowIndex="1" />
-            <Label textFill="#e80f0f" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <TextField editable="false" GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="errorName" textFill="#e80f0f" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="txtId" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button mnemonicParsing="false" styleClass="btn" stylesheets="@DepartmentList.css" text="Salvar">
+                  <Button fx:id="confirmButton" mnemonicParsing="false" onAction="#onSaveAction" styleClass="btn" stylesheets="@DepartmentList.css" text="Salvar">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" styleClass="btn2" stylesheets="@DepartmentList.css" text="Cancelar" />
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#onCancelAction" styleClass="btn2" stylesheets="@DepartmentList.css" text="Cancelar" />
                </children>
             </HBox>
          </children>
