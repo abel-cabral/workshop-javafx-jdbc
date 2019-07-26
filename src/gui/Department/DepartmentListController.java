@@ -94,6 +94,7 @@ public class DepartmentListController implements Initializable {
             // Injeta o obj no controlador da tela de formulario
             DepartmentFormController controller = loader.getController();
             controller.setDepartment(obj); // Nesse caso nao alteramos nada porque é um novo elemento
+            controller.setDepartmentService(new DepartmentService());       // Lembre-se de injetar o servicó
             controller.updateFormData();
 
             // Vamos instanciar um novo state acima do atual
