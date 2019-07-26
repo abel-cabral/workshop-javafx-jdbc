@@ -1,6 +1,7 @@
 package gui.Department;
 
 import application.Main;
+import gui.listeners.DataChangeListener;
 import gui.util.Alerts;
 import gui.util.Utils;
 import javafx.collections.FXCollections;
@@ -26,7 +27,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class DepartmentListController implements Initializable {
+public class DepartmentListController implements Initializable, DataChangeListener {
     private DepartmentService service;
 
     @FXML
@@ -95,6 +96,13 @@ public class DepartmentListController implements Initializable {
             DepartmentFormController controller = loader.getController();
             controller.setDepartment(obj); // Nesse caso nao alteramos nada porque é um novo elemento
             controller.setDepartmentService(new DepartmentService());       // Lembre-se de injetar o servicó
+
+            /*
+                lembre-se a variavel controler acessa o Controller da proxima cena
+                Se inscreve no evento, passando no caso sua propria classe
+                this é uma referencia a propria classe
+            */
+            controller.subscribleDataChangeListener(this);
             controller.updateFormData();
 
             // Vamos instanciar um novo state acima do atual
@@ -109,5 +117,10 @@ public class DepartmentListController implements Initializable {
         } catch (IOException e) {
             Alerts.showAlert("Io Exception", null, e.getMessage(), Alert.AlertType.ERROR);
         }
+    }
+
+    @Override
+    public void onDataChanged() {           //Quem está escutando e irá executar uma ação
+        updateTableView();      // Recarrega a lista
     }
 }

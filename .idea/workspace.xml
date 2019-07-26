@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Passing a Department object to DepartmentForm view">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Saving a new Department">
+      <change afterPath="$PROJECT_DIR$/src/gui/listeners/DataChangeListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/Department/DepartmentFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Department/DepartmentFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/util/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/services/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/services/DepartmentService.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,32 +65,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentFormController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+            <state relative-caret-position="391">
+              <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1561#1562#0" expanded="true" />
-                <element signature="e#1692#1693#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
+                <element signature="e#798#818#0" expanded="true" />
+                <element signature="method#initializeNodes#0;class#DepartmentFormController#0" />
+                <element signature="method#updateFormData#0;class#DepartmentFormController#0" />
+                <element signature="method#getFormData#0;class#DepartmentFormController#0" />
+                <element signature="e#2855#2856#0" expanded="true" />
+                <element signature="e#2874#2875#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentListController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#initializeNodes#0;class#DepartmentListController#0" />
+                <element signature="method#updateTableView#0;class#DepartmentListController#0" />
+                <element signature="e#4357#4358#0" expanded="true" />
+                <element signature="e#4472#4473#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentListController.java">
+        <entry file="file://$PROJECT_DIR$/src/gui/listeners/DataChangeListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#initializeNodes#0;class#DepartmentListController#0" />
-                <element signature="method#updateTableView#0;class#DepartmentListController#0" />
-              </folding>
+            <state relative-caret-position="52">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -105,6 +117,7 @@
         <option value="CSS File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -153,8 +166,9 @@
         <option value="$PROJECT_DIR$/src/model/entities/Department.java" />
         <option value="$PROJECT_DIR$/src/gui/util/Utils.java" />
         <option value="$PROJECT_DIR$/src/model/services/DepartmentService.java" />
-        <option value="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" />
+        <option value="$PROJECT_DIR$/src/gui/listeners/DataChangeListener.java" />
         <option value="$PROJECT_DIR$/src/gui/Department/DepartmentFormController.java" />
+        <option value="$PROJECT_DIR$/src/gui/Department/DepartmentListController.java" />
       </list>
     </option>
   </component>
@@ -176,6 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,7 +221,7 @@
               <item name="workshop-javafx-jdbc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="workshop-javafx-jdbc" type="b2602c69:ProjectViewProjectNode" />
@@ -251,7 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Default'; set:Default; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -307,6 +321,7 @@
     <property name="project.structure.side.proportion" value="0.28235295" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -495,7 +510,8 @@
       <workItem from="1563869646687" duration="2717000" />
       <workItem from="1563922765347" duration="1706000" />
       <workItem from="1564115333420" duration="12000" />
-      <workItem from="1564117234198" duration="3548000" />
+      <workItem from="1564117234198" duration="4547000" />
+      <workItem from="1564124642901" duration="1443000" />
     </task>
     <task id="LOCAL-00001" summary="Passing a Department object to DepartmentForm view">
       <created>1564119128359</created>
@@ -504,17 +520,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564119128359</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Saving a new Department">
+      <created>1564121239189</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564121239189</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33541000" />
+    <option name="totallyTimeSpent" value="35983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1184" y="23" width="1376" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2826087" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2863568" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -523,7 +546,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32990867" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2115607" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2115607" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39954337" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -556,10 +579,24 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="Passing a Department object to DepartmentForm view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Passing a Department object to DepartmentForm view" />
+    <MESSAGE value="Saving a new Department" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving a new Department" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/gui/Department/DepartmentFormController.java</url>
+          <line>78</line>
+          <properties class="gui.Department.DepartmentFormController" method="initializeNodes">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -811,13 +848,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/util/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -873,28 +903,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentListController.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/listeners.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/gui/listeners.java" />
+    <entry file="file://$PROJECT_DIR$/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initializeNodes#0;class#DepartmentListController#0" />
-            <element signature="method#updateTableView#0;class#DepartmentListController#0" />
-          </folding>
+        <state relative-caret-position="104">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/listeners/DataChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentFormController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+        <state relative-caret-position="391">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1561#1562#0" expanded="true" />
-            <element signature="e#1692#1693#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#798#818#0" expanded="true" />
+            <element signature="method#initializeNodes#0;class#DepartmentFormController#0" />
+            <element signature="method#updateFormData#0;class#DepartmentFormController#0" />
+            <element signature="method#getFormData#0;class#DepartmentFormController#0" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2874#2875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Department/DepartmentListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initializeNodes#0;class#DepartmentListController#0" />
+            <element signature="method#updateTableView#0;class#DepartmentListController#0" />
+            <element signature="e#4357#4358#0" expanded="true" />
+            <element signature="e#4472#4473#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,7 @@
 package gui.Department;
 
 import db.DbException;
+import gui.listeners.DataChangeListener;
 import gui.util.Alerts;
 import gui.util.Constraints;
 import gui.util.Utils;
@@ -15,11 +16,14 @@ import model.entities.Department;
 import model.services.DepartmentService;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class DepartmentFormController implements Initializable {
     private Department entity;
     private DepartmentService service;
+    private List<DataChangeListener> dataChangeListenerListeners = new ArrayList<DataChangeListener>();
 
     @FXML
     private TextField txtId;
@@ -44,12 +48,20 @@ public class DepartmentFormController implements Initializable {
         try {
             getFormData(entity);
             service.saveOrUpdate(entity);
+            notifyDataChangeListeners();
+            Utils.currentStage(event).close(); // Depois da nossa programacao defensiva, precisamos fechar o formulario
         } catch (DbException e) {
             Alerts.showAlert("Error saving object", null, e.getMessage(), Alert.AlertType.ERROR);
         }
 
-        // Depois da nossa programacao defensiva, precisamos fechar o formulario
-        Utils.currentStage(event).close();
+
+    }
+
+    // Vai evocar uma funcao x em todos inscritos no vetor
+    private void notifyDataChangeListeners() {
+        for (DataChangeListener s : dataChangeListenerListeners) {
+            s.onDataChanged();
+        }
     }
 
     @FXML
@@ -88,5 +100,9 @@ public class DepartmentFormController implements Initializable {
     private void getFormData(Department entity) { // Passa o valor do form para o obj instanciado
         entity.setId(Utils.tryParseToInt(txtId.getText()));
         entity.setName(txtName.getText());
+    }
+
+    public void subscribleDataChangeListener(DataChangeListener listener) { // Qualquer implemente essa interface
+        dataChangeListenerListeners.add(listener);
     }
 }
