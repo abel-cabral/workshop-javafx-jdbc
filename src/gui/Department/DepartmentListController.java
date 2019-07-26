@@ -47,7 +47,7 @@ public class DepartmentListController implements Initializable {
     @FXML
     private void onBtnAction(ActionEvent event) { // Semelhante a passagem de evento no js
         Stage parentStage = Utils.currentStage(event);
-        createDialogForm("/gui/Department/DepartmentForm.fxml", parentStage);
+        createDialogForm(new Department(null, null), "/gui/Department/DepartmentForm.fxml", parentStage);
     }
 
     @Override
@@ -86,10 +86,15 @@ public class DepartmentListController implements Initializable {
         tableViewDepartment.setItems(obsList);
     }
 
-    private void createDialogForm(String absoluteName, Stage parentStage) {
+    private void createDialogForm(Department obj, String absoluteName, Stage parentStage) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
             Pane pane = loader.load();
+
+            // Injeta o obj no controlador da tela de formulario
+            DepartmentFormController controller = loader.getController();
+            controller.setDepartment(obj); // Nesse caso nao alteramos nada porque é um novo elemento
+            controller.updateFormData();
 
             // Vamos instanciar um novo state acima do atual
             Stage dialogStage = new Stage();
