@@ -102,7 +102,7 @@ public class DepartmentFormController implements Initializable {
 
         entity.setId(Utils.tryParseToInt(txtId.getText()));
         if (txtName.getText() == null || txtName.getText().trim().equals("")) {
-            exception.setErrors("name", "Nome do setor é obrigatório");
+            exception.addError("name", "Nome do setor é obrigatório");
         }
         entity.setName(txtName.getText());
         if (exception.getErrors().size() > 0) { // Map de Validation
