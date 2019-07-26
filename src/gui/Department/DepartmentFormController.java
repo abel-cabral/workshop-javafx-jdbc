@@ -13,12 +13,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import model.entities.Department;
+import model.exceptions.ValidationException;
 import model.services.DepartmentService;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class DepartmentFormController implements Initializable {
     private Department entity;
@@ -27,7 +26,6 @@ public class DepartmentFormController implements Initializable {
 
     @FXML
     private TextField txtId;
-
     @FXML
     private TextField txtName;
     @FXML
@@ -50,6 +48,8 @@ public class DepartmentFormController implements Initializable {
             service.saveOrUpdate(entity);
             notifyDataChangeListeners();
             Utils.currentStage(event).close(); // Depois da nossa programacao defensiva, precisamos fechar o formulario
+        } catch (ValidationException e) {
+            setErrorMessages(e.getErrors());
         } catch (DbException e) {
             Alerts.showAlert("Error saving object", null, e.getMessage(), Alert.AlertType.ERROR);
         }
@@ -98,11 +98,27 @@ public class DepartmentFormController implements Initializable {
     }
 
     private void getFormData(Department entity) { // Passa o valor do form para o obj instanciado
+        ValidationException exception = new ValidationException("Validation error"); // instanciar Excessao
+
         entity.setId(Utils.tryParseToInt(txtId.getText()));
+        if (txtName.getText() == null || txtName.getText().trim().equals("")) {
+            exception.setErrors("name", "Nome do setor é obrigatório");
+        }
         entity.setName(txtName.getText());
+        if (exception.getErrors().size() > 0) { // Map de Validation
+            throw exception;
+        }
     }
 
     public void subscribleDataChangeListener(DataChangeListener listener) { // Qualquer implemente essa interface
         dataChangeListenerListeners.add(listener);
+    }
+
+    private void setErrorMessages(Map<String, String> errors) {
+        Set<String> fields = errors.keySet();
+        // Se tiver um error n faz isso
+        if (fields.contains("name")) {
+            errorName.setText(errors.get("name"));  // Pega a mensagem na chave name
+        }
     }
 }
